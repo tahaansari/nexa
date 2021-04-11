@@ -1,26 +1,34 @@
 <template>
-  <div>
-    <!-- <b-navbar toggleable="lg" variant="white">
-      <img src="../assets/images/hamburger.png" alt="" />
-      <b-navbar-brand href="#">
-        <img src="../assets/images/logo.png" alt="" />
-      </b-navbar-brand>
-
-      <div><b-icon icon="cart-fill" aria-hidden="true"></b-icon> Cart 0</div>
-      <b-button variant="outline-dark">Sign In</b-button>
-
-      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-
-      <b-collapse id="nav-collapse" is-nav>
-        <b-navbar-nav>
-          <b-nav-item href="#">Home</b-nav-item>
-          <b-nav-item href="#">Devices</b-nav-item>
-          <b-nav-item href="#">Delivery & Payment</b-nav-item>
-          <b-nav-item href="#">Garantee</b-nav-item>
-          <b-nav-item href="#">About Us</b-nav-item>
-        </b-navbar-nav>
-      </b-collapse>
-    </b-navbar> -->
+  <div class="border-bottom">
+    <b-container>
+      <b-row class="align-items-center">
+        <b-col cols="3">
+          <b-img
+            class="border-right p-5 mr-4"
+            :src="require('../assets/images/hamburger.png')"
+          ></b-img>
+          <b-navbar-brand href="#">
+            <img src="../assets/images/logo.png" alt="" />
+          </b-navbar-brand>
+        </b-col>
+        <b-col cols="6">
+          <b-nav>
+            <b-nav-item active>Home</b-nav-item>
+            <b-nav-item>Devices</b-nav-item>
+            <b-nav-item>Delivery & Payment</b-nav-item>
+            <b-nav-item>Garantee</b-nav-item>
+            <b-nav-item>About Us</b-nav-item>
+          </b-nav>
+        </b-col>
+        <b-col cols="3">
+          <b-icon icon="cart-fill" aria-hidden="true"></b-icon>
+          <span class="text-uppercase fs-2">Cart 0</span>
+          <b-button pill variant="outline-secondary text-uppercase ml-4"
+            >Sign In</b-button
+          >
+        </b-col>
+      </b-row>
+    </b-container>
   </div>
 </template>
 
@@ -28,4 +36,6 @@
 export default {};
 </script>
 
-<style scoped></style>
+<style lang="scss" scoped>
+@import "../assets/scss/variable.scss";
+</style>

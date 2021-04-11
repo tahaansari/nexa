@@ -1,13 +1,24 @@
-/*
-this is a comment
-*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
 
-$body-bg: #000;
-$body-color: #111;
+// Then import Bootstrap an BootstrapVue SCSS files (order is important)
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+@import "node_modules/bootstrap-vue/src/index.scss";
 
 body {
-    background: red;
+  font-family: "Montserrat", sans-serif;
+  color: #343e5c;
+  font-weight: 600;
 }
 
+.nav .nav-link {
+  color: rgba(52, 62, 92, 0.7);
+}
 
+.nav .nav-link:hover,
+.nav .nav-link:focus {
+  color: #343e5c;
+}
 
+.btn {
+  font-weight: bold;
+}
