@@ -1,16 +1,26 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap");
+@import "./variable.scss";
 // Then import Bootstrap an BootstrapVue SCSS files (order is important)
 @import "node_modules/bootstrap/scss/bootstrap.scss";
 @import "node_modules/bootstrap-vue/src/index.scss";
 
+/* Reset the container */
+.container {
+  max-width: none !important;
+  width: 1170px;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   color: #343e5c;
-  font-weight: 600;
+  letter-spacing: 1px;
 }
 
+.nav .nav-item {
+  padding: 10px;
+}
 .nav .nav-link {
+  padding: 0;
   color: rgba(52, 62, 92, 0.7);
 }
 
@@ -19,6 +29,15 @@ body {
   color: #343e5c;
 }
 
-.btn {
-  font-weight: bold;
+a {
+  color: rgba(52, 62, 92, 0.7);
+}
+
+a:hover,
+a:focus {
+  color: #343e5c;
+}
+
+.font-extra-bold {
+  font-weight: 900;
 }
