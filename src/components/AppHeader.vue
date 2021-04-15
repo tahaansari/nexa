@@ -22,7 +22,12 @@
         </b-col>
         <b-col cols="3">
           <b-icon icon="cart-fill" aria-hidden="true"></b-icon>
-          <span class="text-uppercase fs-2">Cart 0</span>
+          <span class="text-uppercase"
+            >Cart
+            <b-icon icon="circle-fill" aria-hidden="true">
+              0
+            </b-icon>
+          </span>
           <b-button pill variant="outline-secondary text-uppercase ml-4"
             >Sign In</b-button
           >
