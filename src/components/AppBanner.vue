@@ -2,7 +2,6 @@
   <div>
     <b-carousel
       class="banner-carousel"
-      id="carousel-1"
       v-model="slide"
       :interval="4000"
       controls
@@ -22,7 +21,9 @@
             as he had taken me in his arms I held fast by him, or I should have
             fallen to the ground.
           </p>
-          <b-button pill variant="primary py-2 px-10">Buy Now</b-button>
+          <b-button pill variant="primary px-10 banner-carousel__cta"
+            >Buy Now</b-button
+          >
         </b-jumbotron>
       </b-carousel-slide>
       <b-carousel-slide :img-src="require('../assets/images/home-banner.jpg')">
@@ -33,7 +34,9 @@
             as he had taken me in his arms I held fast by him, or I should have
             fallen to the ground.
           </p>
-          <b-button pill variant="primary py-2 px-10">Buy Now</b-button>
+          <b-button pill variant="primary px-10 banner-carousel__cta"
+            >Buy Now</b-button
+          >
         </b-jumbotron>
       </b-carousel-slide>
       <b-carousel-slide :img-src="require('../assets/images/home-banner.jpg')">
@@ -44,7 +47,9 @@
             as he had taken me in his arms I held fast by him, or I should have
             fallen to the ground.
           </p>
-          <b-button pill variant="primary py-2 px-10">Buy Now</b-button>
+          <b-button pill variant="primary px-10 banner-carousel__cta"
+            >Buy Now</b-button
+          >
         </b-jumbotron>
       </b-carousel-slide>
     </b-carousel>
@@ -74,8 +79,12 @@ export default {
 
 <style lang="scss">
 .banner-carousel {
+  &__cta {
+    padding-top: 13px !important;
+    padding-bottom: 13px !important;
+  }
   .carousel-inner {
-    width: 1170px !important;
+    width: 1400px !important;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
@@ -97,6 +106,28 @@ export default {
     top: 50%;
     transform: translateY(-50%);
     bottom: auto;
+  }
+  .carousel-control-next {
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10%;
+  }
+  .carousel-indicators {
+    margin-bottom: 25px;
+  }
+  .carousel-indicators li {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid #ffffff;
+    margin: 0 4px;
+    &.active {
+      background: #ffffff;
+    }
   }
 }
 </style>

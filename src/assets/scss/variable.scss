@@ -1,5 +1,6 @@
 $border-color: #eff1f7;
-$body-color: #343e5c;
+$color-text: #343e5c;
+$color-light-text: rgba(52, 62, 92, 0.7);
 
 $spacer: 10px;
 $spacers: ();
@@ -59,4 +60,12 @@ $spacers: map-merge(
 a,
 a:hover {
   text-decoration: none;
+}
+
+.font-extra-bold {
+  font-weight: 900;
+}
+
+.lh-1 {
+  line-height: 1;
 }
