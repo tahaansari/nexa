@@ -5,7 +5,7 @@ Vue.config.productionTip = false
 
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 
-import './assets/scss/custom.scss'
+import './assets/scss/common.scss'
 
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
