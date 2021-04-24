@@ -12,9 +12,7 @@
           </b-navbar-brand>
         </b-col>
         <b-col cols="6">
-          <b-nav
-            class="header__nav justify-content-between font-14 font-weight-bold"
-          >
+          <b-nav class="header__nav justify-content-between font-14">
             <b-nav-item>
               Home
             </b-nav-item>
@@ -35,11 +33,11 @@
         <b-col cols="3 d-flex justify-content-end align-items-center">
           <b-link to="#">
             <b-icon icon="cart-fill" class="mr-5" aria-hidden="true"></b-icon>
-            <div class="d-inline-block text-uppercase font-12 font-weight-bold">
-              Cart <span class="header__cart">0</span>
+            <div class="d-inline-block text-uppercase font-12">
+              Cart <span class="app-header__cart">0</span>
             </div>
           </b-link>
-          <b-button pill variant="outline-secondary" class="ml-20"
+          <b-button pill variant="outline-secondary" class="ml-20 px-15 py-10"
             >Sign In</b-button
           >
         </b-col>

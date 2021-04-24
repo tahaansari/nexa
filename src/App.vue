@@ -3,8 +3,8 @@
     <AppHeader></AppHeader>
     <TopBar></TopBar>
     <AppBanner></AppBanner>
-    <div class="content-wrapper">
-      <TopFilter></TopFilter>
+    <div class="content-wrapper pt-50 pb-50">
+      <TopFilter class="mb-30"></TopFilter>
       <div class="container">
         <div class="row">
           <div class="col-3">

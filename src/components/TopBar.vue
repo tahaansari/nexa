@@ -3,7 +3,7 @@
     <b-container>
       <b-row class="align-items-center">
         <b-col cols="8">
-          <b-nav class="text-uppercase font-12 ml-n10 py-2 font-weight-bold">
+          <b-nav class="text-uppercase font-12 ml-n10 py-2 ">
             <b-nav-item to="#">Top sales</b-nav-item>
             <b-nav-item to="#">Brand Focus</b-nav-item>
             <b-nav-item to="#">Hi-tech</b-nav-item>
@@ -13,9 +13,7 @@
         </b-col>
         <b-col cols="4">
           <div class="d-flex align-items-center justify-content-between">
-            <b-link
-              to="#foo"
-              class="font-weight-bold text-uppercase font-12 py-10 px-20"
+            <b-link to="#foo" class="text-uppercase font-12 py-10 px-20"
               >Support
             </b-link>
             <div
@@ -26,7 +24,7 @@
                 type="text"
                 placeholder="I’m looking for ..."
                 required
-                class="border-0 font-weight-bold color-light-text"
+                class="border-0 color-light-text"
               >
               </b-form-input>
             </div>

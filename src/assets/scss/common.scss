@@ -17,6 +17,7 @@ body {
   font-family: "Montserrat", sans-serif;
   color: $color-text;
   letter-spacing: 1px;
+  font-weight: bold;
 }
 
 a {
@@ -32,11 +33,51 @@ a:focus {
 .btn {
   line-height: 1;
   text-transform: uppercase;
-  padding: 10px 20px;
   font-size: 12px;
   font-weight: bold;
 }
 
 .color-light-text {
   color: $color-light-text;
+}
+
+.filter {
+  &__bg {
+    background-color: #ffffff;
+    font-size: 12px;
+    border-radius: 8px;
+    text-transform: uppercase;
+  }
+  &__input {
+    background-color: #f0f2f7;
+    padding-left: 15px;
+    padding-right: 15px;
+    &--keywords {
+      max-width: 160px !important;
+    }
+    &--price {
+      max-width: 60px !important;
+    }
+  }
+  &__select {
+    &--sort {
+      max-width: 100px !important;
+    }
+    &--ship {
+      max-width: 70px !important;
+    }
+  }
+  &__shipping {
+    min-height: auto;
+    label {
+      &:before {
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      &:after {
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
 }
