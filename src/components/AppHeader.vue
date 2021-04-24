@@ -1,18 +1,22 @@
 <template>
   <div class="header">
     <b-container>
-      <b-row class="align-items-center">
+      <!-- class="align-items-center" -->
+      <b-row>
         <b-col cols="3">
           <b-img
-            class="border-right pt-7 pb-7 pr-7 mr-7"
+            class="border-right pr-20 mr-20"
             :src="require('../assets/images/hamburger.png')"
           ></b-img>
-          <b-navbar-brand href="#">
+          <b-navbar-brand to="#" class="p-0 m-0">
             <b-img :src="require('../assets/images/logo.png')"> </b-img>
           </b-navbar-brand>
         </b-col>
-        <b-col cols="6" class="d-flex justify-content-center">
-          <b-nav class="font-14 header__nav font-weight-bold">
+        <!-- class="d-flex justify-content-center" -->
+        <b-col cols="6">
+          <b-nav
+            class="header__nav justify-content-between font-14 font-weight-bold"
+          >
             <b-nav-item>
               Home
             </b-nav-item>
@@ -30,56 +34,20 @@
             </b-nav-item>
           </b-nav>
         </b-col>
-        <b-col cols="3" class="d-flex justify-content-end align-items-center">
+        <!-- class="d-flex justify-content-end align-items-center" -->
+        <b-col cols="3">
           <b-link to="#">
-            <b-icon icon="cart-fill" class="mr-1" aria-hidden="true"></b-icon>
+            <b-icon icon="cart-fill" class="mr-5" aria-hidden="true"></b-icon>
             <div class="d-inline-block text-uppercase font-12 font-weight-bold">
-              Cart <span class="cart-count">0</span>
+              Cart <span class="header__cart-count">0</span>
             </div>
           </b-link>
-          <b-button pill variant="outline-secondary" class="ml-4"
+          <b-button pill variant="outline-secondary" class="ml-20"
             >Sign In</b-button
           >
         </b-col>
       </b-row>
     </b-container>
-    <div class="border-top">
-      <b-container>
-        <!-- align-items-center -->
-        <b-row class="">
-          <b-col cols="8">
-            <b-nav class="text-uppercase font-12 ml-n2 py-2 font-weight-bold">
-              <b-nav-item to="#">Top sales</b-nav-item>
-              <b-nav-item to="#">Brand Focus</b-nav-item>
-              <b-nav-item to="#">Hi-tech</b-nav-item>
-              <b-nav-item to="#">Best sellers</b-nav-item>
-              <b-nav-item to="#">Projects</b-nav-item>
-            </b-nav>
-          </b-col>
-          <b-col cols="4">
-            <div class="d-flex align-items-center h-100">
-              <b-link
-                href="#foo"
-                class="mr-4 border-right font-weight-bold text-uppercase font-12"
-                >Support</b-link
-              >
-              <div
-                class="d-flex align-items-center border-left border-right px-3 h-100"
-              >
-                <b-icon-search></b-icon-search>
-                <b-form-input
-                  type="text"
-                  placeholder="I’m looking for ..."
-                  required
-                  class="border-0 font-weight-bold color-light-text"
-                >
-                </b-form-input>
-              </div>
-            </div>
-          </b-col>
-        </b-row>
-      </b-container>
-    </div>
   </div>
 </template>
 
@@ -88,16 +56,35 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/scss/variable.scss";
-.cart-count {
-  display: inline-block;
-  background: #e3e8f0;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  text-align: center;
-  font-weight: bold;
-  line-height: 25px;
-  margin-left: 5px;
+@import "../assets/scss/variables.scss";
+
+.header {
+  &__nav {
+    .nav-item {
+      margin-right: 20px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    .nav-link {
+      padding: 0 5px;
+      color: $color-light-text;
+    }
+    .nav-link:hover,
+    .nav-link:focus {
+      color: $color-text;
+    }
+  }
+  &__cart-count {
+    display: inline-block;
+    background: #e3e8f0;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: bold;
+    line-height: 25px;
+    margin-left: 5px;
+  }
 }
 </style>

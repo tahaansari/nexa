@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap");
+
+@import "./variables.scss";
+@import "./customize.scss";
+
+// Then import Bootstrap an BootstrapVue SCSS files (order is important)
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+@import "node_modules/bootstrap-vue/src/index.scss";
+
+/* Reset the container */
+.container {
+  max-width: none !important;
+  width: 1200px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: $color-text;
+  letter-spacing: 1px;
+}
+
+a {
+  color: $color-light-text;
+}
+
+a:hover,
+a:focus {
+  color: $color-text;
+}
+
+.btn {
+  line-height: 1;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.color-light-text {
+  color: $color-light-text;
+}

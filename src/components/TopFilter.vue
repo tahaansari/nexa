@@ -72,5 +72,54 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../assets/scss/variable.scss";
+@import "../assets/scss/variables.scss";
+.filter {
+  font-size: 12px;
+  font-weight: bold;
+  color: $color-light-text;
+  text-transform: uppercase;
+  &__wrapper {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  &__keywords {
+    width: 160px;
+  }
+  &__price {
+    width: 60px;
+  }
+  &__freeshipping {
+    display: inline-block;
+    min-height: auto;
+    .custom-control-label::before,
+    .custom-control-label::after {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  label {
+    margin-bottom: 0;
+    margin: 0 10px;
+  }
+  input[type="text"] {
+    display: inline-block;
+    font-weight: bold;
+    background: #f0f2f7;
+    font-size: 12px;
+    margin: 0 10px;
+    &::placeholder {
+      opacity: 0.5;
+    }
+  }
+  select {
+    display: inline-block;
+    width: auto;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    font-size: 12px;
+  }
+}
 </style>
