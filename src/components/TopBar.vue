@@ -1,10 +1,9 @@
 <template>
-  <div class="border-top">
+  <div class="top-bar border-top">
     <b-container>
-      <!-- align-items-center -->
-      <b-row class="">
+      <b-row class="align-items-center">
         <b-col cols="8">
-          <b-nav class="text-uppercase font-12 ml-n2 py-2 font-weight-bold">
+          <b-nav class="text-uppercase font-12 ml-n10 py-2 font-weight-bold">
             <b-nav-item to="#">Top sales</b-nav-item>
             <b-nav-item to="#">Brand Focus</b-nav-item>
             <b-nav-item to="#">Hi-tech</b-nav-item>
@@ -13,14 +12,14 @@
           </b-nav>
         </b-col>
         <b-col cols="4">
-          <div class="d-flex align-items-center h-100">
+          <div class="d-flex align-items-center justify-content-between">
             <b-link
-              href="#foo"
-              class="mr-4 border-right font-weight-bold text-uppercase font-12"
-              >Support</b-link
-            >
+              to="#foo"
+              class="font-weight-bold text-uppercase font-12 py-10 px-20"
+              >Support
+            </b-link>
             <div
-              class="d-flex align-items-center border-left border-right px-3 h-100"
+              class="d-flex align-items-center border-left border-right py-10 px-20"
             >
               <b-icon-search></b-icon-search>
               <b-form-input
@@ -42,4 +41,10 @@
 export default {};
 </script>
 
-<style></style>
+<style lang="scss">
+.top-bar {
+  .nav-link {
+    padding: 5px 10px;
+  }
+}
+</style>

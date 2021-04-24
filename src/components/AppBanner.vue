@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="app-banner">
     <b-carousel
       class="banner-carousel"
       v-model="slide"
