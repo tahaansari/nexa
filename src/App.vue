@@ -11,38 +11,7 @@
             <SideBar></SideBar>
           </div>
           <div class="col-9">
-            <b-card-group deck>
-              <b-card
-                title="Apple TV 32GB"
-                :img-src="require('./assets/images/_AppleTV32GB.png')"
-                img-alt="Image"
-                tag="article"
-                class="mb-2 p-30"
-              >
-                <h4>Black</h4>
-                <h4>$49.99</h4>
-              </b-card>
-              <b-card
-                title="Apple TV 32GB"
-                :img-src="require('./assets/images/_AppleTV32GB.png')"
-                img-alt="Image"
-                tag="article"
-                class="mb-2 p-30"
-              >
-                <h4>Black</h4>
-                <h4>$49.99</h4>
-              </b-card>
-              <b-card
-                title="Apple TV 32GB"
-                :img-src="require('./assets/images/_AppleTV32GB.png')"
-                img-alt="Image"
-                tag="article"
-                class="mb-2 p-30"
-              >
-                <h4>Black</h4>
-                <h4>$49.99</h4>
-              </b-card>
-            </b-card-group>
+            <Product></Product>
           </div>
         </div>
       </div>
@@ -56,6 +25,7 @@ import TopBar from "./components/TopBar.vue";
 import AppBanner from "./components/AppBanner.vue";
 import TopFilter from "./components/TopFilter.vue";
 import SideBar from "./components/SideBar.vue";
+import Product from "./components/Product.vue";
 
 export default {
   name: "App",
@@ -65,6 +35,7 @@ export default {
     AppBanner,
     TopFilter,
     SideBar,
+    Product,
   },
 };
 </script>

@@ -118,4 +118,25 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="scss">
+.side-bar {
+  &__item {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  &__subitem {
+    font-size: 12px;
+    display: block;
+    padding: 10px 20px;
+    background: #f0f2f7;
+    color: #a1a8bd;
+    border-bottom: 1px solid #dfe4ee;
+    font-weight: 400;
+    text-transform: uppercase;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+</style>
