@@ -11,7 +11,38 @@
             <SideBar></SideBar>
           </div>
           <div class="col-9">
-            right content
+            <b-card-group deck>
+              <b-card
+                title="Apple TV 32GB"
+                :img-src="require('./assets/images/_AppleTV32GB.png')"
+                img-alt="Image"
+                tag="article"
+                class="mb-2 p-30"
+              >
+                <h4>Black</h4>
+                <h4>$49.99</h4>
+              </b-card>
+              <b-card
+                title="Apple TV 32GB"
+                :img-src="require('./assets/images/_AppleTV32GB.png')"
+                img-alt="Image"
+                tag="article"
+                class="mb-2 p-30"
+              >
+                <h4>Black</h4>
+                <h4>$49.99</h4>
+              </b-card>
+              <b-card
+                title="Apple TV 32GB"
+                :img-src="require('./assets/images/_AppleTV32GB.png')"
+                img-alt="Image"
+                tag="article"
+                class="mb-2 p-30"
+              >
+                <h4>Black</h4>
+                <h4>$49.99</h4>
+              </b-card>
+            </b-card-group>
           </div>
         </div>
       </div>
